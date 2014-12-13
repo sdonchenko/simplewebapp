@@ -20,7 +20,7 @@ public class HelloWorld {
             public void $invoke(DOMEvent ev) {
                 Form form = window.document.forms.$get(0);
                 Element button = form.elements.$get("say"); //field
-                final Input text = form.elements.$get("to"); // button
+                final Input text = form.elements.$get("to"); // button on page
                 button.onclick = new Function1<DOMEvent, Boolean>() {
                     @Override
                     public Boolean $invoke(DOMEvent ev) {
